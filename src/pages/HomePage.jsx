@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import CheckMarckIcon from "../assets/images/icons/checkmark.png";
 import "../styles/HomePage.css";
 
 function HomePage() {
@@ -49,7 +50,7 @@ function HomePage() {
             <div className="product-spacer"></div>
 
             <div className="added-to-cart">
-              <img src="images/icons/checkmark.png" />
+              <img src={CheckMarckIcon} />
               Added
             </div>
 
@@ -98,7 +99,7 @@ function HomePage() {
             <div className="product-spacer"></div>
 
             <div className="added-to-cart">
-              <img src="images/icons/checkmark.png" />
+              <img src={CheckMarckIcon} />
               Added
             </div>
 
@@ -147,7 +148,7 @@ function HomePage() {
             <div className="product-spacer"></div>
 
             <div className="added-to-cart">
-              <img src="images/icons/checkmark.png" />
+              <img src={CheckMarckIcon} />
               Added
             </div>
 
