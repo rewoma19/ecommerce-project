@@ -1,0 +1,16 @@
+.not-found-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.not-found-textbox {
+  flex: 1;
+
+  display: grid;
+  place-items: center;
+}
+
+.not-found-text {
+  font-size: 2rem;
+}
