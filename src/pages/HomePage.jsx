@@ -1,23 +1,15 @@
 import axios from "axios";
-import { useEffect } from "react";
-import { products } from "../../starting-code/data/products";
+import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import CheckMarckIcon from "../assets/images/icons/checkmark.png";
 import "../styles/HomePage.css";
 
 function HomePage() {
-  // fetch("http://localhost:3000/api/products")
-  //   .then((response) => {
-  //     return response.json();
-  //   })
-  //   .then((data) => {
-  //     console.log(data);
-  //   });
+  const [products, setProducts] = useState([]);
 
-  // The empty dependecy array in the useEffect hook means it will only run once after the component is created
   useEffect(() => {
     axios.get("http://localhost:3000/api/products").then((response) => {
-      console.log(response.data);
+      setProducts(response.data);
     });
   }, []);
 
